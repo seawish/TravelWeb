@@ -1,0 +1,83 @@
+div.notebox{
+/*	border: 1px solid red;*/
+	position: relative;
+	margin: auto auto;
+	height: 700px;
+	width: 75%;
+}
+div.title{
+	position: relative;
+	background: #3F3B38;
+	margin: 20px 0;
+	padding: 30px 0;
+	border-radius: 5px;
+	color:white;
+	font-size: 16px;
+	font-family: 微软雅黑; 
+}
+
+div.title input{
+	padding: 4px;
+	font-size: 14px;
+	width: 60%;
+	border: 1px solid #a4d2e9;
+	height: 20px;
+}
+
+span.publish-icon {
+	/*background: url("http://lvyou4.bdimg.com/static/widget/notes/edit-main-editor-form/img/edit-save-btns2_cd80e188.png") no-repeat 0 -259px;*/
+	background: url("../images/edit-save-btns.png") no-repeat 0 -259px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+	width: 72px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 38px;
+	color: #fff;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+#container{
+	position: absolute;
+	top:113px;
+}
+
+div.container-right{
+	/*border: 1px solid red;*/
+	position: absolute;
+	float: left;
+	left: 75%;
+	width: 25%;
+	height: 450px;
+	background: #3F3B38;
+	border-radius: 5px;
+}
+
+div.commitarea{
+
+/*	border: 1px solid red;*/
+	position: absolute;
+	top: 550px;
+	width: 73.5%;
+	height: 40px;
+	background: #3F3B38;
+	border-radius: 5px;
+	z-index: -1;
+}
+.commit{
+	background: url("http://lvyou2.bdimg.com/static/widget/notes/edit-main-editor-form/img/commit-all_ac874786.png") no-repeat 0 0;
+	/*background: url("../images/commit-all.png") no-repeat 0 -259px;*/
+	width: 116px;
+	height: 40px;
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	margin-left: 10px;
+	border-radius: 5px;
+	position: absolute;
+	top: 550px;
+	border: 0px;
+}

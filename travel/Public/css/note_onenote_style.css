@@ -1,0 +1,58 @@
+div.commitarea{
+	position: relative;
+}
+div.colorarea{
+/*	border: 1px solid red;*/
+	position: absolute;
+	top: 0;
+	width: 73.5%;
+	height: 40px;
+	background: #3F3B38;
+	border-radius: 5px;
+	z-index: -1;
+}
+
+a.commit{
+	background: url("http://lvyou2.bdimg.com/static/widget/notes/edit-main-editor-form/img/commit-all_ac874786.png") no-repeat 0 0;
+	width: 116px;
+	height: 40px;
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	margin-left: 10px;
+	border-radius: 5px;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+}
+
+#titleinput{
+	position: absolute;
+	top: 15px;
+	left: 90px;
+	padding: 4px;
+	font-size: 14px;
+	width: 60%;
+	border: 1px solid #a4d2e9;
+	height: 20px;
+}
+
+.titlelabel{
+	color: rgb(255, 255, 255);
+	cursor: default;
+	display: inline;
+	font-family: 微软雅黑;
+	height: auto;
+	width: auto;
+}
+
+.title{
+	position: relative;
+	background: #3F3B38;
+	margin: 5px 0;
+	padding: 20px 0;
+	border-radius: 5px;
+	color:white;
+	font-size: 16px;
+	font-family: 微软雅黑; 
+}

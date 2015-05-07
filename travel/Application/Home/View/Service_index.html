@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<head>
+	<title>服务</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="__PUBLIC__/css/Index/style.css" rel="stylesheet" type="text/css"  media="all" />
+</head>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="top-nav">
+				<ul>
+					<li><a href="{:U('Home/Index/index')}">首页</a></li>
+					<li><a href="{:U('Home/City/index')}">目的地</a></li>
+					<li class="active"><a href="{:U('Home/Service/index')}">服务</a></li>
+					<li><a href="{:U('Home/Note/index')}">游记</a></li>
+					<li><a href="{:U('Home/Picture/index')}">画册</a></li>
+					<li><a href="<?php if (session('?username')) {echo(U('Home/Login/myspace'));} else echo(U('Home/Login/index')); ?>">个人中心</a></li>
+					<li><a href="{:U('Home/Login/logout')}">退出</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</div>
+	<div class="content">
+		<!---start-services---->
+		<div class="services">
+			<div class="wrap">
+				<div class="services-header">
+					<h3>服务</h3>
+				</div>
+				<div class="section group group">
+					<div class="listview_1_of_2 images_1_of_2">
+						<div class="listimg listimg_2_of_1">
+							<img src="__PUBLIC__/images/Index/res.png">
+						</div>
+						<div class="text list_2_of_1">
+							<h3><span>旅游</span> 攻略</h3>
+							<br/>
+							<p>看看再说。</p>
+							<br/><br/><br/><br/>
+							<a class="button" href="{:U('Home/Service/raider')}">了解更多</a>
+						</div>
+					</div>			
+					<div class="listview_1_of_2 images_1_of_2">
+						<div class="listimg listimg_2_of_1">
+							<img src="__PUBLIC__/images/Index/guid.png">
+						</div>
+						<div class="text list_2_of_1">
+							<h3><span>路线</span> 导航</h3>
+							<!-- <h4>Sed ut perspiciatis undeaccusantium .</h4> -->
+							<br/>
+							<p>想去哪，就去哪！</p>
+							<br/><br/><br/><br/>
+							<a class="button" href="{:U('Home/Service/map')}">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="listview_1_of_2 images_1_of_2">
+						<div class="listimg listimg_2_of_1">
+							<img src="__PUBLIC__/images/Index/air.png">
+						</div>
+						<div class="text list_2_of_1 ">
+							<h3><span>航班</span> 查询</h3>
+							<!-- <h4>Sed ut perspiciatis undeaccusantium .</h4> -->
+							<br/>
+							<p>中国的航班每一个是准时的！ </p>
+							<br/><br/><br/><br/>
+							<a class="button" href="{:U('Home/Service/flight')}">了解更多</a>
+						</div>
+					</div>			
+					<div class="listview_1_of_2 images_1_of_2">
+						<div class="listimg listimg_2_of_1">
+							<img src="__PUBLIC__/images/Index/compin.png">
+						</div>
+						<div class="text list_2_of_1">
+							<h3><span>旅游社 </span>服务</h3>
+							<!-- <h4>Sed ut perspiciatis undeaccusantium .</h4> -->
+							<br/>
+							<p>有些时候我们也需要他人的帮助~~</p>
+							<br/><br/><br/><br/>
+							<a class="button" href="#">了解更多</a>
+						</div>
+					</div>
+				</div>
+		  	</div>
+		</div>
+		<!---End-services---->
+		<div class="specials">
+			<div class="wrap">
+				<div class="specials-heading">
+					<h3>个人中心</h3>
+				</div>
+				<div class="specials-grids">
+					<div class="special-grid">
+						<img src="__PUBLIC__/images/Index/grids-img1.jpg" title="image-name" />
+						<a href="{:U('Home/Note/manage')}">游记</a>
+						<p>生活是一段奇妙的旅行，就在那一去无返的火车上。与那些新人和旧人们共同经历吧！也许这就是一个人无法抗拒的命运，有你、有我、也有他。</p>
+					</div>
+					<div class="special-grid">
+						<img src="__PUBLIC__/images/Index/grids-img2.jpg" title="image-name" />
+						<a href="#">攻略</a>
+						<p>对于旅行，从来都记忆模糊。记不得都去了哪些地方，看了哪些风景，遇到哪些人。尽管同学说，去旅行不在于记忆，而在于当时的那份心情。</p>
+					</div>
+					<div class="special-grid spe-grid">
+						<img src="__PUBLIC__/images/Index/grids-img3.jpg" title="image-name" />
+						<a href="#">计划</a>
+						<p>旅行是一种病。一旦感染了，你就再也无法摆脱。它还是一种传染病，最后你可能把这种病传染给其他人而你自己根本就不想从中解脱出来！</p>
+					</div>
+
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
+

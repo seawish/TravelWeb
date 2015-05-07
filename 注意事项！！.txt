@@ -1,0 +1,8 @@
+使用thinkphp框架
+打开方式
+    1.  放在服务器根目录，再在浏览器中输入
+      http://localhost:XXXX/travel/
+    2.  打开    
+      ..\源代码\travel\Application\Home\View\Index_index.html
+
+因为时间原因，有些数据未能跟数据库连接，如果有时间完善会更好。

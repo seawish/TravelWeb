@@ -1,0 +1,395 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 宋体;
+}
+
+body {
+	background-color: #2D3538;
+}
+
+header h1 {
+	width: 95%;
+	max-width: 550px;
+	color: #ddd;
+	text-align: center;
+	margin: 20px auto 0;
+}
+
+/* ==== Wrapper of the forms ==== */
+#wrapper {
+	max-width: 550px;
+	min-width: 250px;
+	width: 95%;
+	margin: 20px auto 0px;
+	position: relative;
+}
+
+/* ==== Sign-In and Register Tabs ==== */
+#sign-in-tab, #register-tab {
+	color: #ddd;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	max-width: 40%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#returnhome {
+	text-decoration:none;
+	float: right;
+	color: #ddd;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	max-width: 40%;
+	padding: 10px;
+	cursor: pointer;
+}
+ /* ==== The active Sign-In and Register Tab ==== */
+.active {
+	background-color: #3D484C; /* here you can change the background color of the active tab */
+	border-radius: 4px 4px 0px 0px;
+}
+
+/* ==== The form section styling of elements ==== */
+#form-section {
+	border-radius: 0px 0px 4px 4px;
+	background: #3D484C; /* here you can change the background color of the form */
+	padding: 25px;
+
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#form-section li {
+	list-style: none;
+}
+
+#form-section label span {
+	cursor: pointer;
+	color: #ddd;
+	display: block;
+	margin: 5px 0;
+	font-size: 15px;
+}
+
+.left-column { /* left column from the two column input row */
+	float: left;
+	width: 49%;
+}
+
+.right-column { /* right column from the two column input row */
+	width: 49%;
+	float: right;
+}
+
+@media (max-width: 400px) { /* takes care of the responsive behavior of the two column inputs */
+	.left-column {
+		width: 100%;
+	}
+
+	.right-column {
+		width: 100%;
+	}
+}
+
+/* ==== Inputs and Buttons of the form, with hover and focus behavior ==== */
+#form-section input { /* here you can change the properties of the input fields */
+	width: 100%;
+	border: 1px solid #3D484C;
+	background: #2D3538; 
+	margin: 0 0 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	padding-right: 30px;
+	color: #ddd;
+}
+
+#form-section input:hover {
+	border: 1px solid #666;
+	-webkit-transition: border-color 0.2s ease-in-out;
+	-moz-transition: border-color 0.2s ease-in-out;
+	-o-transition: border-color 0.2s ease-in-out;
+	-ms-transition: border-color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out;
+}
+
+#form-section button[type="submit"] { /* here you can change the properties of the submit button */
+	cursor: pointer;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	border: none;
+	color: #FFF;
+	margin: 20px 0 5px;
+	border-radius: 3px;
+	display: block;
+	font-size: 15px;
+	background: #94B84B;
+	-webkit-box-shadow: 0 4px 0 #729131;
+	box-shadow: 0 4px 0 #729131;
+}
+
+#form-section button[type="submit"]:hover {
+	background-color: #729131;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+#form-section input:focus {
+	outline: 0;
+	border: 1px solid #666;
+}
+
+#form-section input.qq-login { 
+	cursor: pointer;
+	width: 100%;
+	height: 38px;
+	border: none;
+	background: #466ab5;
+	-webkit-box-shadow: 0 4px 0 #3c5a9a;
+	box-shadow: 0 4px 0 #3c5a9a;
+	color: #FFF;
+	margin: 20px 0 5px;
+	border-radius: 3px;
+	display: block;
+	font-size: 15px;
+	padding-left: 20px;
+}
+
+#form-section input.qq-login:hover {
+	background-color: #3c5a9a;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+#form-section input.sina-login {
+	cursor: pointer;
+	width: 100%;
+	height: 38px;
+	border: none;
+	background: #c7362f;
+	-webkit-box-shadow: 0 4px 0 #aa251f;
+	box-shadow: 0 4px 0 #aa251f;
+	color: #FFF;
+	margin: 20px 0 5px;
+	border-radius: 3px;
+	display: block;
+	font-size: 15px;
+}
+
+#form-section input.sina-login:hover {
+	background-color: #aa251f;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+/* === The section numbering from the registration form === */
+#form-section p {
+	padding-bottom: 15px;
+	margin: 15px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px dashed #2D3538;
+}
+
+span.register-numbering {
+	padding: 3px 8px;
+	background-color: #94B84B;
+	color: #333;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+span.register-numbering-text {
+	color: #ddd;
+}
+
+/* === Footer section === */
+footer {
+	max-width: 550px;
+	min-width: 250px;
+	width: 95%;
+	margin: 15px auto 0px;
+	position: relative;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+
+footer a:link, a:visited {
+	color: white;
+}
+
+/* === Register form, which is hidden at first === */
+.register-form {
+	display: none;
+}
+
+/* ==== Placeholder customization ==== */
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+:-moz-placeholder {
+	color: #888;
+}
+
+::-moz-placeholder {
+	color: #888;
+}
+
+:-ms-input-placeholder {
+	color: #888;
+}
+/* ==== End of placeholder customization ==== */
+
+/* === HTML5 validation styles === */
+#form-section input:required:valid {
+	background: #2D3538 url(valid-icon.png) no-repeat 99% 50%;
+	background-position: right 6px center;
+}
+
+#form-section input:focus:invalid {
+	background: #2D3538 url(invalid-icon.png) no-repeat 99% 50%;
+	background-position: right 6px center;
+}
+
+/* === Custom checkbox (Remember me checkbox) === */
+
+#checkbox li {
+	margin-top: 10px;
+	border-radius: 4px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #2D3538;
+	top: 5px;
+}
+
+#checkbox li:hover {
+	border: 1px solid #666;
+	-webkit-transition: border-color 0.2s ease-in-out;
+	-moz-transition: border-color 0.2s ease-in-out;
+	-o-transition: border-color 0.2s ease-in-out;
+	-ms-transition: border-color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out;
+}
+
+#checkbox li input {
+	display: none;
+}
+
+#checkbox label {
+	font-size: 14px;
+	margin-left: 6px;
+	color: #ddd;
+}
+
+#checkbox .selected {
+	background-color: #333;
+}
+
+#checkbox .selected span.unchecked-state {
+	display: none;
+}
+
+span.unchecked-state {
+	display: block;
+	width: 22px;
+	height: 22px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #2D3538;
+	border-radius: 4px;
+}
+
+span.checked-state {
+	display: none;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	background-color: #2D3538;
+	background-image: url(checkmark-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border-radius: 4px;
+}
+
+#checkbox li.selected span.checked-state {
+	display: block;
+}
+
+/* ==== HTML5 Custom Validation Bubble for Chrome ===== */
+::-webkit-validation-bubble-message {
+	background-color: #E5534E;
+	font-size: 14px;
+	top: -4px;
+	left: 0px;
+	width: auto;
+	margin: 0;
+	border: none;
+	text-align: left;
+	display: block;
+	padding: 6px;
+	border-radius: 4px;
+
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-indent: -22px;
+}
+
+::-webkit-validation-bubble-message > div > div + * {
+	font-size: 16px;
+	line-height: 32px;
+	font-family: sans-serif;
+	color: #000;
+}
+
+::-webkit-validation-bubble-icon {
+	background-color: transparent;
+	padding: 0px;
+	text-indent: 0px;
+	display: inline-block;
+	position: relative;
+	background-image: none;
+	background-repeat: none;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+	float: left;
+}
+
+::-webkit-validation-bubble-arrow {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 5px;
+	color: #E5534E;
+}
+
+::-webkit-validation-bubble-arrow:before {
+	position: absolute;
+	content: "\25E4";
+} 
+
+/* ==== End of validation bubbles customization ==== */

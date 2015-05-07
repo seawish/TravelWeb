@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<head>
+	<title>个人中心</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="__PUBLIC__/css/Index/style.css" rel="stylesheet" type="text/css"  media="all" />	
+	<link rel="stylesheet" href="__PUBLIC__/css/Index/responsiveslides.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/myspace/index.css">
+	<script src="__PUBLIC__/js/Index/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/Index/responsiveslides.min.js"></script>
+	<script>
+	// You can also use "$(window).load(function() {"
+	    $(function () {
+	      // Slideshow 1
+	      $("#slider1").responsiveSlides({
+	        maxwidth: 2500,
+	        speed: 600
+	      });
+	});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="top-nav">
+				<ul>
+					<li><a href="{:U('Home/Index/index')}">首页</a></li>
+					<li><a href="{:U('Home/City/index')}">目的地</a></li>
+					<li><a href="{:U('Home/Service/index')}">服务</a></li>
+					<li><a href="{:U('Home/Note/index')}">游记</a></li>
+					<li><a href="{:U('Home/Picture/index')}">画册</a></li>
+					<li class="active"><a href="<?php if (session('?username')) {echo(U('Home/Login/myspace'));} else echo(U('Home/Login/index')); ?>">个人中心</a></li>
+					<li><a href="{:U('Home/Login/logout')}">退出</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</div>
+	<div class="content">
+		<div id="left">
+			<dl>
+				<dt>旅游</dt>
+				<dd><a href="{:U('Home/Note/manage2')}" target="iframe">游记管理</a></dd>
+				<dd><a href="#">攻略管理</a></dd>
+			</dl>
+			<dl>
+				<dt>安全</dt>
+				<dd><a href="{:U('Home/Login/userinf')}" target="iframe">密码修改</a></dd>
+			</dl>
+			<dl>
+				<dt>账号退出</dt>
+				<dd><a href="{:U('Home/Login/logout')}">退出</a></dd>
+			</dl>
+		</div>
+		<div id="right">
+			<iframe name="iframe" src="{:U('Home/Login/blank')}"></iframe>
+		</div>
+	</div>
+</body>
+</html>

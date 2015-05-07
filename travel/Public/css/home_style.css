@@ -1,0 +1,274 @@
+body{
+	font-family : 'Segoe UI', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif';
+	font-size : 13px;
+	background-color: #262626;
+}
+
+h1{
+	text-align : center;
+}
+
+div.colpick{
+	width : 100%;
+}
+
+div.colpick>ul{
+	padding : 0;
+	margin: auto;
+	width : 180px;
+	height : 50px;
+}
+div.colpick>ul>li{
+	float:left;
+	height : 50px;
+	width : 50px;
+	background-color : black;
+	list-style-type : none;
+	margin : auto 5px ;
+}
+
+div.colpick>ul>li>a{
+	display:block;
+	height : 100%;
+	width: 100%;
+}
+
+div.context{
+	/*border: 1px solid #FF0000;*/
+	position: relative;
+	margin: auto auto;
+	padding: 10px;
+	width: 1239px;
+	height: 3200px;
+}
+
+div.img1{
+	/*border: 1px solid #FF0000;*/
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+div.img2{
+	/*border: 1px solid #FF0000;*/
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+div.text1{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 320px;
+	top: 10px;
+	padding: 50px;
+	width: 517.5px;
+	height: 517.5px;
+}
+
+div.img3{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 10px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img4{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 320px;
+	/*border: 1px solid #FF0000;*/
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+/*第三行*/
+div.img5{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img6{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 320px;
+	top: 630px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img7{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 630px;
+	top: 630px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img8{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 630px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+/*第4-5行*/
+div.text2{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 10px;
+	top: 940px;
+	padding: 50px;
+	width: 517.5px;
+	height: 517.5px;
+}
+div.img9{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 630px;
+	top: 940px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img10{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 940px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img11{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 630px;
+	top: 1250px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img12{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 1250px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+/*第六行*/
+div.img13{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	padding: 10px;
+	top: 1560px;
+	width: 288px;
+	height: 288px;
+}
+div.img14{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 320px;
+	top: 1560px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img15{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 630px;
+	top: 1560px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img16{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 1560px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+/*第7-8行*/
+div.text3{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 320px;
+	top: 1870px;
+	padding: 50px;
+	width: 517.5px;
+	height: 517.5px;
+}
+div.img17{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 10px;
+	top: 1870px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img18{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 1870px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img19{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 10px;
+	top: 2180px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+div.img20{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 940px;
+	top: 2180px;
+	padding: 10px;
+	width: 288px;
+	height: 288px;
+}
+
+/*第9-10行*/
+div.text4{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 10px;
+	top: 2490px;
+	padding: 50px;
+	width: 517.5px;
+	height: 517.5px;
+}
+div.img21{
+	/*border: 1px solid #FF0000;*/
+	position: absolute;
+	left: 630px;
+	top: 2490px;
+	padding: 10px;
+	width: 598px;
+	height: 598px;
+}

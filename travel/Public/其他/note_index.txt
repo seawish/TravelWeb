@@ -1,0 +1,44 @@
+				<div class="post">
+					<h2><a href="blog_post.html">Famous Sentences (Quote Post)</a></h2>
+					<div class="post-meta"><span class="icon-calendar"></span>On 10 June, 2012 <span class="icon-author"></span>By <a href="#">admin</a>  <span class="icon-comment"></span>With <a href="#">12 Comments</a></div>
+					<div class="post-quote">
+						<span class="icon"></span>
+						<blockquote>
+							Sed blandit euismod mi, id tincidunt mauris lacinia aliquam. Proin interdum diam vel libero elementum et adipiscing lectus mattis.
+							Semper feugiat libero sitea amet mollis. Nulla dolor augue, condimentum id lacinia eget, interdum sed lacus. Donec porttitor orci et quam aliquam in malesuada.
+						</blockquote>
+					</div>
+					<div class="post-content">
+						<p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis lorem eus semper. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna.</p>
+					</div>
+					<a class="post-entry" href="blog_post.html">Continue Reading</a>
+				</div>
+				
+				<div class="post">
+					<h2><a href="blog_post.html">Expierence Zero Gravity (Video Format)</a></h2>
+					<div class="post-meta"><span class="icon-calendar"></span>On 10 June, 2012 <span class="icon-author"></span>By <a href="#">admin</a>  <span class="icon-comment"></span>With <a href="#">12 Comments</a></div>
+					<div class="embed">
+						<iframe src="http://player.vimeo.com/video/29017795?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
+					<div class="post-content">
+						<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dnte venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, erat porttitor ligula, pibus posuere velit aliquet. Duis mollis, est non commodo luctus, erat porttitor ligula.</p>
+						<p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna.ctetur.</p>
+				</div>
+					<a class="post-entry" href="blog_post.html">Continue Reading</a>
+				</div>
+				
+				<div class="post">
+					<h2><a href="blog_post.html">Exploring Tuscany (Gallery Format)</a></h2>
+					<div class="post-meta"><span class="icon-calendar"></span>On 10 June, 2012 <span class="icon-author"></span>By <a href="#">admin</a>  <span class="icon-comment"></span>With <a href="#">12 Comments</a></div>
+					<div class="flexslider blog">
+						<ul class="slides">
+							<li><a href="__PUBLIC__/images/Note/img_blog_slider_01_large.jpg" rel="imagebox[gallery2]"><img src="__PUBLIC__/images/Note/img_blog_slider_01.jpg" alt="" /><div class="overlay zoom"></div></a></li>
+							<li><a href="__PUBLIC__/images/Note/img_blog_slider_02_large.jpg" rel="imagebox[gallery2]"><img src="__PUBLIC__/images/Note/img_blog_slider_02.jpg" alt="" /><div class="overlay zoom"></div></a></li>
+							<li><a href="__PUBLIC__/images/Note/img_blog_slider_03_large.jpg" rel="imagebox[gallery2]"><img src="__PUBLIC__/images/Note/img_blog_slider_03.jpg" alt="" /><div class="overlay zoom"></div></a></li>
+						 </ul>
+					</div>
+					<div class="post-content">
+						<p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mimgravida at eget metus. Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet adipiscing elit.  Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
+					</div>
+					<a class="post-entry" href="blog_post.html">Continue Reading</a>
+				</div>

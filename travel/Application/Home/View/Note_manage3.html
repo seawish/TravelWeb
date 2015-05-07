@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="zh-CN"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>管理游记</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="__PUBLIC__/css/manage/foundation.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/manage/app.css">
+	<script type = "text/javascript" src = "__PUBLIC__/js/jquery.min.js"></script>
+	<script type = "text/javascript" src = "__PUBLIC__/js/navigation.js"></script>
+		<script type = "text/javascript" src = "__PUBLIC__/js/navigationT.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "__PUBLIC__/css/navigation.css">	
+		<link rel = "stylesheet" type = "text/css" href = "__PUBLIC__/css/navigationT.css">	
+		<link rel = "stylesheet" type = "text/css" href = "__PUBLIC__/css/home_style.css">		
+		<script type = "text/javascript">
+		var col
+		function ChangeCol(){
+			if(col == 1){
+		 $("div.metro_nav").show();
+		 $("div.metro_na").hide();
+			}else if(col == 2){
+		$("div.metro_nav").show();
+		 $("div.metro_na").hide();
+			}else if(col == 3){
+				$("div.metro_nav").hide();
+				$("div.metro_na").show();
+			}
+			setColors();
+		}
+		</script>
+
+		<style>
+			body{
+				margin : 0;
+			}
+			img{
+				border : none;
+			}
+		</style>
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="../../html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class= "metro_nav" style="display:none" id="secondshow">
+		<div class= "nav_title">自游网</div>
+			<ul>
+				<li>
+					<a href = "{:U('Home/Index/index')}"><img src = "__PUBLIC__/images/icon_home.png"/><span>首页</span></a>
+				</li>
+
+				<li>
+					<a><img src = "__PUBLIC__/images/icon_settings.png"/><span>目的地</span></a>
+					
+					<ul>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_account.png"/><span></span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_edit.png"/><span></span></a></li>
+					</ul>
+				</li>
+							
+				<li>
+					<a href = "#"><img src = "__PUBLIC__/images/icon_shopping.png"/><span>攻略</span></a>
+					<ul>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+
+					</ul>
+				</li>
+				
+				<li>
+					<a href = "#"><img src = "__PUBLIC__/images/icon_gallery.png"/><span>游记</span></a>
+					<ul>
+						<li><a href ="{:U('Home/Picture/index')}"><img src = "__PUBLIC__/images/icon_menu.png"/><span>画册</span></a></li>
+						<li><a href = "{:U('Home/Note/index')}"><img src = "__PUBLIC__/images/icon_menu.png"/><span>发表</span></a></li>
+						<li><a href = "{:U('Home/Note/manage')}"><img src = "__PUBLIC__/images/icon_menu.png"/><span>管理</span></a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href = "#"><img src = "__PUBLIC__/images/icon_apps.png"/><span>行程</span></a>
+					<ul>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+
+					</ul>
+				</li>
+				<li>
+					<a href = "{:U('Home/Login/index')}"><img src = "__PUBLIC__/images/icon_account.png"/><span>注册/登录</span></a>
+				</li>
+			</ul>
+	</div>
+	<div class="metro_nav" id="firstshow">
+			<div class="nav_title">
+				游记
+				<span class="back_button" onclick="document.getElementById('firstshow').style.display='none';document.getElementById('secondshow').style.display='';"></span>
+			</div>
+			<ul>
+				<li>
+					<a href="{:U('Home/Picture/index')}">
+						<img src="/travel/Public/images/icon_menu.png">		
+						<span>画册</span>
+					</a>
+				</li>
+				<li>
+					<a href="{:U('Home/Note/index')}">
+						<img src="/travel/Public/images/icon_menu.png">		
+						<span>发表</span>
+					</a>
+				</li>
+				<li><a href = "{:U('Home/Note/manage')}"><img src = "__PUBLIC__/images/icon_menu.png"/><span>管理</span></a></li>
+			</ul>
+	</div>	
+	<div id="content-wrapper" class="row">
+		<div class="row">
+			<div class="three columns">
+				<h4>近期发表</h4>
+				<p>
+					We've been working on some pretty interesting projects recently. Make sure you check them all out. This place can be used to describe your work.
+				</p>
+				<a href="#" class="button nice">查看更多 &rsaquo;</a>
+			</div>
+			<foreach name='data' item='v'>
+				<div class="three columns">
+					<div class="icon-hover">
+						<a href="{:U('Home/Note/onenote', array('id'=>$v['id']))}" title=""><img src="__PUBLIC__/images/manage/demo/thumb-<?php echo(rand(1, 14))?>.jpg" alt="" class="transparency"></a>
+						<div class="underlay">
+							查看
+						</div>
+					</div>
+					<!-- END .icon-hover -->
+					<div class="entry-detail">
+						<h5><a href="{:U('Home/Note/onenote', array('id'=>$v['id']))}">{$v.title}</a></h5>
+						{$v.head}
+					</div>
+				</div>
+				<!-- END .three columns -->
+			</foreach>
+		</div>
+		<div class="clearfix">
+		</div>
+		<hr/>
+		<h4>My Blog</h4>
+		<div class="row">
+			<div class="three columns">
+				<div class="icon-hover">
+					<a href="blog-single.html" title=""><img src="__PUBLIC__/images/manage/demo/thumb-11.jpg" alt="" class="transparency"></a>
+					<div class="underlay">
+						Read Post
+					</div>
+				</div>
+				<!-- END .icon-hover -->
+				<div class="entry-detail">
+					<h5><a href="#">Why is it hard to push innovation?</a></h5>
+					 Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="extras"><a href="#">07 March 2012</a> &middot; By <a href="#">Samuel</a></span>
+				</div>
+			</div>
+			<!-- END .three columns -->
+			<div class="three columns">
+				<div class="icon-hover">
+					<a href="blog-single.html" title=""><img src="__PUBLIC__/images/manage/demo/thumb-9.jpg" alt="" class="transparency"></a>
+					<div class="underlay">
+						Read Post
+					</div>
+				</div>
+				<!-- END .icon-hover -->
+				<div class="entry-detail">
+					<h5><a href="#">Showcase of Magazine-Style Web Designs</a></h5>
+					 Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="extras"><a href="#">05 March 2012</a> &middot; By <a href="#">Susheela</a></span>
+				</div>
+			</div>
+			<!-- END .three columns -->
+			<div class="three columns">
+				<div class="icon-hover">
+					<a href="blog-single.html" title=""><img src="__PUBLIC__/images/manage/demo/thumb-6.jpg" alt="" class="transparency"></a>
+					<div class="underlay">
+						Read Post
+					</div>
+				</div>
+				<!-- END .icon-hover -->
+				<div class="entry-detail">
+					<h5><a href="#">Free Download: Absolution Icon Set</a></h5>
+					 Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="extras"><a href="#">01 March 2012</a> &middot; By <a href="#">Jane</a></span>
+				</div>
+			</div>
+			<!-- END .three columns -->
+			<div class="three columns last">
+				<div class="icon-hover">
+					<a href="blog-single.html" title=""><img src="__PUBLIC__/images/manage/demo/thumb-7.jpg" alt="" class="transparency"></a>
+					<div class="underlay">
+						Read Post
+					</div>
+				</div>
+				<!-- END .icon-hover -->
+				<div class="entry-detail">
+					<h5><a href="#">10 Things You Can Do Today to Become a Better Designer</a></h5>
+					 Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="extras"><a href="#">31 Feburary 2012</a> &middot; By <a href="#">John</a></span>
+				</div>
+			</div>
+			<!-- END .three columns -->
+			<div class="clearfix">
+			</div>
+		</div>
+		<!-- END .row -->
+	</div>
+	<!-- END #content-wrapper -->
+
+
+	<!-- Included JS Files -->
+	<script src="__PUBLIC__/js/manage/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/manage/modernizr.foundation.js"></script>
+	<script src="__PUBLIC__/js/manage/bgslider.jquery.js"></script>
+	<script src="__PUBLIC__/js/manage/foundation.js"></script>
+	<script src="__PUBLIC__/js/manage/plugins.js"></script>
+	<script src="__PUBLIC__/js/manage/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="op_hangban">
+		<ul class="c-tabs-nav c-tabs-nav-movetop">
+			<li class="c-tabs-nav-li op_hangban_tab c-tabs-nav-selected OP_LOG_BTN">国内航班</li>
+			<li class="c-tabs-nav-li op_hangban_tab OP_LOG_BTN">国际•港澳台航班</li>
+		</ul>
+		<table class="op_hangban_table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td>
+						<span class="c-gap-right">航线查询</span>
+					</td>
+					<td>
+						<span class="c-input c-input-small c-gap-right-small op_hanban_pos_start"> <i class="c-icon c-icon-map"></i>
+							<input value="重庆" class="op_hangban_start" name="op_hangban_start" id="op_hangban_start" type="text" autocomplete="off"></span>
+					</td>
+					<td>
+						<a href="javascript:;" class="c-btn op_hangban_exchange c-gap-right-small"> <i class="c-icon c-icon-exchange"></i>
+						</a>
+					</td>
+					<td>
+						<span class="c-input c-input-small c-gap-right op_hanban_pos_end">
+							<i class="c-icon c-icon-map"></i>
+							<input value="" class="op_hangban_end" name="op_hangban_end" id="op_hangban_end" type="text" autocomplete="off"></span>
+					</td>
+					<td>
+						<a class="c-btn c-btn-primary op_hangban_line_btn OP_LOG_BTN" href="http://flight.qunar.com/schedule/fsearch_list.jsp?&amp;ex_track=bd_aladding_flightsk_01&amp;departure=%E9%87%8D%E5%BA%86&amp;arrival=%E5%8C%97%E4%BA%AC" target="_blank">查询</a>
+						http://flight.qunar.com/schedule/fsearch_list.jsp?departure=北京&arrival=上海
+						http://flight.qunar.com/schedule/international/fsearch_list.jsp?departure=北京&arrival=伦敦
+						http://train.qunar.com/stationToStation.htm?fromStation=重庆&toStation=杭州
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="c-gap-right">航班号查询</span>
+					</td>
+					<td colspan="5">
+						<div class="op_hangban_div">
+							<span class="c-input c-input-small c-gap-right">
+								<i class="c-icon c-icon-plane"></i>
+								<input class="op_hangban_number_ipt" name="op_hangban_number_ipt" type="text"></span>
+							<a class="c-btn c-btn-primary op_hangban_flight_btn" href="javascript:void(0)" id="op_hangban_gtLine">查询</a>
+							<div class="op_hangban_number_err" style="display:none;width:260px"></div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

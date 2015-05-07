@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>游记</title>
+
+	<!-- Mobile Specific
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" type="text/css"  href="__PUBLIC__/css/Note/style.css">
+
+	<!-- JS
+  ================================================== -->
+	<script type='text/javascript' src="__PUBLIC__/js/Index/jquery.min.js"></script>
+	<script type='text/javascript' src="__PUBLIC__/js/Note/twitter.js"></script>
+	<script type='text/javascript' src="__PUBLIC__/js/Note/custom.js"></script>
+	<script type='text/javascript' src="__PUBLIC__/js/Note/carousel.js"></script>
+	<script type='text/javascript' src="__PUBLIC__/js/Note/jquery.flexslider.js"></script>
+	<script type='text/javascript' src="__PUBLIC__/js/Note/shortcodes.js"></script>
+	<script type='text/javascript' src="__PUBLIC__/js/Note/imagebox.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	  	<script src="__PUBLIC__/js/Note/selectivizr.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+	
+	<!---start-header---->
+	<div class="newheader">
+		<div class="newwrap">
+			<div class="newtop-nav">
+				<ul>
+					<li><a href="{:U('Home/Index/index')}">首页</a></li>
+					<li><a href="{:U('Home/City/index')}">目的地</a></li>
+					<li><a href="{:U('Home/Service/index')}">服务</a></li>
+					<li class="active"><a href="{:U('Home/Note/index')}">游记</a></li>
+					<li><a href="{:U('Home/Picture/index')}">画册</a></li>
+					<li><a href="<?php if (session('?username')) {echo(U('Home/Login/myspace'));} else echo(U('Home/Login/index')); ?>">个人中心</a></li>
+					<li><a href="{:U('Home/Login/logout')}">退出</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</div>
+	<!---End-header---->
+	
+	<!-- Page Subtitle -->
+	<div id="subtitle">
+	
+		<!-- 960 Container -->
+		<div class="container">
+			<div class="eleven columns">
+				<h3>游记</h3>
+			</div>
+			<div class="five columns">
+				<a id="submiticon" href="{:U('Home/Note/write')}"></a>
+			</div>
+		</div>
+		<!-- End 960 Container -->
+	
+	</div><!-- End Page Subtitle -->
+	
+	<!-- 960 Container -->
+	<div class="container">
+	
+		<!-- Posts Container-->
+		<div class="eleven columns">
+			<div id="blog_post_container">
+		
+				
+				<foreach name='data' item='v'>
+					<!-- Post-->
+					<div class="post">
+						<h2><a href="{:U('Home/Note/read', array('id'=>$v['id']))}">{$v.title}</a></h2>
+						<div class="post-meta">
+							<span class="icon-calendar"></span>{$v.date}<span class="icon-author"></span>By 
+							<a href="#">{$v.author}</a>  
+							<!-- <span class="icon-comment"></span>With <a href="#">12 Comments</a> -->
+						</div>
+						<div class="post-thumb">
+							<a href="__PUBLIC__/images/Note/img_blog_01_large.jpg" rel="imagebox[gallery]" title="Through the pages of Tuscany">
+								<img src="__PUBLIC__/images/Note/img_blog_post_01.jpg" alt=""/>
+								<div class="overlay zoom"></div>
+							</a>
+						</div>
+						<div class="post-content">
+							<p>{$v.preview}</p>
+						</div>
+						<a class="post-entry" href="{:U('Home/Note/read', array('id'=>$v['id']))}">Continue</a>
+					</div>
+					<!-- End Post-->
+				</foreach>
+
+				<!-- Navigation -->
+				<a href="#" class="older_entires">上一页</a>
+				<a href="#" class="newer_entires">下一页</a>
+				
+			</div><!-- End Posts Container-->
+		</div>
+		
+		<!-- Widget Container-->
+		<div class="five columns">
+			<div id="blog_widget_container">
+			
+				<!-- Search -->
+				<div class="search">
+					<input type="text" onblur="if(this.value=='')this.value='To search type and hit enter';" onfocus="if(this.value=='To search type and hit enter')this.value='';" value="To search type and hit enter" class="text"/>
+				</div>
+				
+				<!-- Text Widget -->
+				<div class="widget">
+					<div class="widget-title"><h3>查看热门游记</h3></div>
+					<foreach name='hot' item='v'>
+						<div class="widget-text">
+							<li style="list-style-type='circle'">{$v.preview}</li>
+						</div>
+					</foreach>
+				</div>
+				
+				<!-- Categories -->
+<!-- 				<div class="widget">
+					<div class="widget-title"><h3>分类</h3></div>
+					<div class="widget-categories">
+						<ul>
+							<li><a href="#">Photography</a></li>
+							<li><a href="#">Motion Graphic</a></li>
+							<li><a href="#">WordPress Tricks</a></li>
+							<li><a href="#">Sentences</a></li>
+							<li><a href="#">Video Gallery</a></li>
+							<li><a href="#">Artwork</a></li>
+						</ul>
+					</div>
+				</div>	 -->			
+			</div>
+		</div>
+		<!-- End Widget Container-->
+		
+	</div>
+	<!-- End 960 Container -->
+
+		
+		<!-- Back To Top Button -->
+		<div id="backtotop"><a href="#"></a></div>
+		
+		<!-- Imagebox Build -->
+		<script src="__PUBLIC__/js/Note/imagebox.build.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[ 2014-10-12T14:21:05+08:00 ] ::1 /travel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010701s ]
+

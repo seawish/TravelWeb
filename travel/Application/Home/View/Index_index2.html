@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>首页</title>
+		<script type = "text/javascript" src = "__PUBLIC__/js/jquery.min.js"></script>
+		<script type = "text/javascript" src = "__PUBLIC__/js/navigation.js"></script>
+		<script type = "text/javascript" src = "__PUBLIC__/js/navigationT.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "__PUBLIC__/css/navigation.css">	
+		<link rel = "stylesheet" type = "text/css" href = "__PUBLIC__/css/navigationT.css">	
+		<link rel = "stylesheet" type = "text/css" href = "__PUBLIC__/css/home_style.css">	
+
+		<script type = "text/javascript">
+		var col
+		function ChangeCol(){
+			if(col == 1){
+		 $("div.metro_nav").show();
+		 $("div.metro_na").hide();
+			}else if(col == 2){
+		$("div.metro_nav").show();
+		 $("div.metro_na").hide();
+			}else if(col == 3){
+				$("div.metro_nav").hide();
+				$("div.metro_na").show();
+			}
+			setColors();
+		}
+		</script>
+
+		<style>
+			body{
+				margin : 0;
+			}
+			img{
+				border : none;
+			}
+		</style>
+<!-- 		<script type="text/javascript">
+			if (isset($_SESSION['username'])) {
+				document.getElementById("logli1").style.display="none";
+				document.getElementById("logli2").style.display="";
+			};
+		</script> -->
+
+	</head>
+
+	<body>
+		<div class= "metro_nav">
+			<div class= "nav_title">自游网</div>
+			<ul>
+				<li>
+					<a href = "{:U('Home/Index/index')}"><img src = "__PUBLIC__/images/icon_home.png"/><span>首页</span></a>
+				</li>
+
+				<li>
+					<a><img src = "__PUBLIC__/images/icon_settings.png"/><span>目的地</span></a>
+					
+					<ul>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_account.png"/><span></span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_edit.png"/><span></span></a></li>
+					</ul>
+				</li>
+							
+				<li>
+					<a href = "#"><img src = "__PUBLIC__/images/icon_shopping.png"/><span>攻略</span></a>
+					<ul>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+
+					</ul>
+				</li>
+				
+				<li>
+					<a href = "#"><img src = "__PUBLIC__/images/icon_gallery.png"/><span>游记</span></a>
+					<ul>
+						<li><a href ="{:U('Home/Picture/index')}"><img src = "__PUBLIC__/images/icon_menu.png"/><span>画册</span></a></li>
+						<li><a href = "{:U('Home/Note/index')}"><img src = "__PUBLIC__/images/icon_menu.png"/><span>发表</span></a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href = "#"><img src = "__PUBLIC__/images/icon_apps.png"/><span>行程</span></a>
+					<ul>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+						<li><a href = "#"><img src = "__PUBLIC__/images/icon_menu.png"/><span>Submenu</span></a></li>
+
+					</ul>
+				</li>
+
+				<li>
+					<a href = "{:U('Home/Login/index')}"><img src = "__PUBLIC__/images/icon_account.png"/><span><?php if (session('?username')) {echo(session('username'));} else echo("注册/登录"); ?></span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="context">	
+			<div class="img1">
+				<a href=""><img src="__PUBLIC__/images/index/1.jpg"></a>
+			</div>
+			<div class="img2">
+				<a href=""><img src="__PUBLIC__/images/index/2.jpg"></a>
+			</div>
+			<div class="text1">
+				
+			</div>
+			<div class="img3">
+				<a href=""><img src="__PUBLIC__/images/index/3.jpg"></a>
+			</div>
+			<div class="img4">
+				<a href=""><img src="__PUBLIC__/images/index/4.jpg"></a>
+			</div>
+			<div class="img5">
+			 	<a href=""><img src="__PUBLIC__/images/index/5.jpg"></a>
+			</div>
+			<div class="img6">
+				<a href=""><img src="__PUBLIC__/images/index/6.jpg"></a>
+			</div>
+			<div class="img7">
+				<a href=""><img src="__PUBLIC__/images/index/7.jpg"></a>
+			</div>
+			<div class="img8">
+				<a href=""><img src="__PUBLIC__/images/index/8.jpg"></a>
+			</div>
+			<div class="text2">
+				
+			</div>
+			<div class="img9">
+				<a href=""><img src="__PUBLIC__/images/index/9.jpg"></a>
+			</div>
+			<div class="img10">
+				<a href=""><img src="__PUBLIC__/images/index/10.jpg"></a>
+			</div>
+			<div class="img11">
+				<a href=""><img src="__PUBLIC__/images/index/11.jpg"></a>
+			</div>
+			<div class="img12">
+				<a href=""><img src="__PUBLIC__/images/index/12.jpg"></a>
+			</div>
+			<div class="img13">
+				<a href=""><img src="__PUBLIC__/images/index/13.jpg"></a>
+			</div>
+			<div class="img14">
+				<a href=""><img src="__PUBLIC__/images/index/14.jpg"></a>
+			</div>
+			<div class="img15">
+				<a href=""><img src="__PUBLIC__/images/index/15.jpg"></a>
+			</div>
+			<div class="img16">
+				<a href=""><img src="__PUBLIC__/images/index/16.jpg"></a>
+			</div>
+			<div class="img17">
+				<a href=""><img src="__PUBLIC__/images/index/17.jpg"></a>
+			</div>
+			<div class="img18">
+				<a href=""><img src="__PUBLIC__/images/index/18.jpg"></a>
+			</div>
+			<div class="text3">
+				
+			</div>
+			<div class="img19">
+				<a href=""><img src="__PUBLIC__/images/index/19.jpg"></a>
+			</div>
+			<div class="img20">
+				<a href=""><img src="__PUBLIC__/images/index/20.jpg"></a>
+			</div>
+			<div class="text4">
+				
+			</div>
+			<div class="img21">
+				<a href=""><img src="__PUBLIC__/images/index/21.jpg"></a>
+			</div>
+				
+		</div>
+	</body>
+</html>

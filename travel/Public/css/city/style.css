@@ -1,0 +1,39 @@
+@charset "utf-8";
+*{padding:0;margin:0;}
+a{text-decoration:none;cursor:pointer;}
+.clr{clear:both;overflow:hidden;height:0;width:0;}
+
+.relative{
+	position:relative;
+	width:900;
+}
+#home_bannera{text-decoration:none;cursor:pointer;}
+#home_banner{max-width:1440px;margin:0 auto;}
+.maxwidth{width:990px;margin:0 auto;}
+#big_img{height:450px;background:no-repeat center}
+#small_img{
+	height:114px;
+	padding-top:13px;
+	position:absolute;
+	top:-128px;
+	width:900px;
+	background:url(../images/bnbg.png) no-repeat center 0;
+	left: 16px;
+}
+#small_pre,#small_next,#small_imgs{height:104px;line-height:104px;float:left;font-size:22px;}
+#small_pre,#small_next{width:22px;display:block;}
+#small_pre{margin-right:17px;}
+#small_next{margin-left:17px;}
+#small_pre:hover{background-position:-22px center;}
+#small_next:hover{background-position:-66px center;}
+#small_imgs{width:px;overflow:hidden;}
+#small_imgs .item{float:left;padding:0 16px;}
+#small_imgs .item .img{cursor:pointer;width:120px;height:92px;padding:3px;padding-top:10px;background:url(../images/banner_bg.png) no-repeat center bottom;}
+#small_imgs .item .img img{width:120px;height:90px;}
+#small_imgs .item .active{background:url(../images/banner_bg_a.png) no-repeat center bottom;}
+#profile-homepage #container #mainWrapper .main .ui-box.fn-clear .hot-spots.fn-clear li .tag-info.fn-clear a strong {
+	font-size: 18px;
+}
+#profile-homepage #container #mainWrapper .main #journey-list .travel-log-list li strong {
+	font-size: 14px;
+}
